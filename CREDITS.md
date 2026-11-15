@@ -48,6 +48,9 @@ We recognize and credit the principal investigators and university research team
 | **Survey on Sex Work Perceptions** | Md Moontakim Rahman | Multi-stakeholder survey dataset (800+ participants) examining perceptions, labor rights, and legal status in Bangladesh | [10.17632/3cx8g4gxw6.1](https://doi.org/10.17632/3cx8g4gxw6.1) |
 | **Food Commodity Price (OHLC)** | Arman Hossain, Md. Rajibul Palas, Montaser Abdul Quader, Md. Shoab Alam, Mozdaher Abdul Quader | Multivariate daily Open-High-Low-Close (OHLC) commodity prices for agricultural forecasting and volatility analysis | [10.17632/dd58ks2p5y.1](https://doi.org/10.17632/dd58ks2p5y.1) |
 | **BanglaAuth-12** | Sadman Sadik Khan (DIU NLP & ML Research Lab, Daffodil International University) | 4,105 literary text passages from prominent Bengali authors (Tagore, Nazrul, Humayun Ahmed, Ray) for authorship identification and stylometry | [10.17632/5mkdyy5xwb.1](https://doi.org/10.17632/5mkdyy5xwb.1) |
+| **Bangladesh Labor Act, 2006** | Kazi Md Naimur Rahman, Tahmid Sattar, Faisal Muhammad Shah (AUST) | 746 legal question-answer pairs derived from the Bangladesh Labor Act, 2006 for QA and legal NLP systems | [10.17632/3n9vv2x4xt.3](https://doi.org/10.17632/3n9vv2x4xt.3) |
+| **Bangla Healthcare Severity Dataset** | Pulock Deb Roy, Baivab Roy et al. | 5,263 manually annotated healthcare queries categorized into 4 clinical severity tiers (Emergency, Urgent, Routine, General Query) | [10.17632/37z8kgx79m/1](https://doi.org/10.17632/37z8kgx79m/1) |
+| **Bangla Dialect Dataset** | Md. Julkar Naeen et al. | Cross-regional dialect corpus covering Barishal, Bogura, Chattogram, Dhaka, Noakhali, Sylhet, Rangpur | [10.17632/sm63ryv5dt/1](https://doi.org/10.17632/sm63ryv5dt/1) |
 
 ---
 
@@ -108,7 +111,11 @@ We acknowledge and credit the individual researchers and authors of the integrat
 - **[Mendeley Data / Elsevier](https://data.mendeley.com)**: Persistent open research data repository providing DOIs and peer-reviewed university data sets.
 - **[Hugging Face Hub](https://huggingface.co)**: Open-access machine learning community hosting model evaluation suites, tokenizers, and NLP benchmarks.
 - **[Zenodo Open-Access Repository](https://zenodo.org)**: CERN / OpenAIRE open-science platform providing persistent Digital Object Identifiers (DOIs). Special thanks to academic authors from **BUET, DU, SUST, CU, DIU, BUBT, PUC**, and international research labs.
-- **[Kaggle Community](https://www.kaggle.com)**: Open dataset community, competition hosts, and independent researchers across Bangladesh, including contributors like **Abir Kolin** ([Daraz Bangladesh Products & Reviews](https://www.kaggle.com/datasets/abirkolin/daraz-bangladesh-products-reviews)).
+- **[Kaggle Community](https://www.kaggle.com)**: Open dataset community, competition hosts, and independent researchers across Bangladesh, including contributors like **Abir Kolin** ([Daraz Bangladesh Products & Reviews](https://www.kaggle.com/datasets/abirkolin/daraz-bangladesh-products-reviews)) and **Asifuzzaman Jishan** ([BNLIT Dataset](https://www.kaggle.com/datasets/jishan900/bangla-natural-language-image-to-text-bnlit)).
+- **[Roboflow Universe](https://universe.roboflow.com)**: Computer vision repository hosting annotated YOLO and COCO computer vision datasets for traffic management, license plates, and road scene understanding in Bangladesh (European University of Bangladesh, project400, 1996images).
+- **[Figshare](https://figshare.com)**: Open-access research repository. Special thanks to **Salim Sazzed** ([Bangla Bengali Drama Review Dataset](https://figshare.com/articles/dataset/Bangla_Bengali_Drama_Review_Dataset/13162085/1)).
+- **[IEEE DataPort](https://ieee-dataport.org)**: Open research data platform hosting large-scale benchmarks including **SUPara-Benchmark** English-Bangla Machine Translation dataset.
+- **[Rabby.dev / Shahariar Rabby](https://rabby.dev/ekush)**: Shahariar Rabby and DIU NLP Lab, creators of the **Ekush** handwritten character dataset (367,018 samples, 122 classes).
 
 ---
 
@@ -254,6 +261,65 @@ We acknowledge and credit the individual researchers and authors of the integrat
     author = {Kowsher, Md and Rahman, Md Shahidur and others},
     journal = {arXiv preprint arXiv:2203.00000},
     year = {2022}
+}
+
+@article{sazzed2020cross,
+    title = {Cross-lingual Sentiment Analysis in Bengali and English Using Sentiment Lexicons and Deep Learning},
+    author = {Sazzed, Salim},
+    journal = {arXiv preprint arXiv:2011.02537},
+    year = {2020},
+    publisher = {Figshare},
+    doi = {10.6084/m9.figshare.13162085.v1}
+}
+
+@inproceedings{rabby2019ekush,
+    title = {Ekush: An In-Depth Handwritten Bangla Numerical and Character Dataset},
+    author = {Rabby, Shahariar and Haque, Md Tanzim and Islam, Md Majedul and Hasan, Sadia and Taki, Abdullah Saihan},
+    booktitle = {2019 International Conference on Electrical, Computer and Communication Engineering (ECCE)},
+    pages = {1--6},
+    year = {2019},
+    organization = {IEEE},
+    doi = {10.1109/ECACE.2019.8679454}
+}
+
+@article{jishan2023bnlit,
+    title = {BNLIT: Bangla Natural Language Image to Text Dataset},
+    author = {Jishan, Asifuzzaman and Contributors},
+    year = {2023},
+    publisher = {Kaggle / Zenodo},
+    howpublished = {\url{https://www.kaggle.com/datasets/jishan900/bangla-natural-language-image-to-text-bnlit}}
+}
+
+@misc{rahman2024laboract,
+    author = {Kazi Md Naimur Rahman and Tahmid Sattar and Faisal Muhammad Shah},
+    title = {Bangladesh Labor Act, 2006 Bangla Dataset For NLP},
+    year = {2024},
+    publisher = {Mendeley Data},
+    doi = {10.17632/3n9vv2x4xt.3}
+}
+
+@misc{roy2024healthseverity,
+    author = {Pulock Deb Roy and Baivab Roy},
+    title = {Bangla Healthcare Severity Dataset},
+    year = {2024},
+    publisher = {Mendeley Data},
+    doi = {10.17632/37z8kgx79m/1}
+}
+
+@misc{naeen2024bangladialect,
+    author = {Md. Julkar Naeen and Contributors},
+    title = {Bangla Dialect Dataset: Exploring Linguistic Diversity Across Regions},
+    year = {2024},
+    publisher = {Mendeley Data},
+    doi = {10.17632/sm63ryv5dt/1}
+}
+
+@article{hasan2020supara,
+    title = {SUPara-Benchmark: A Balanced English-Bangla Parallel Corpus for Machine Translation},
+    author = {Hasan, Md. Arid and Alam, Firoj and Chowdhury, Shammur Absar},
+    journal = {IEEE DataPort},
+    year = {2020},
+    doi = {10.21227/czes-gs42}
 }
 ```
 

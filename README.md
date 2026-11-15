@@ -3,15 +3,15 @@
 > The premier open-source catalog of curated, deduplicated, and categorized **Bengali Datasets** across diverse scientific and AI fields.
 > Officially hosted at: [github.com/md-muqtadir-fuad/Bengali-Data-Hub](https://github.com/md-muqtadir-fuad/Bengali-Data-Hub)
 
-![Total Datasets](https://img.shields.io/badge/Unique_Datasets-1,772-blue.svg)
-![Kaggle Sources](https://img.shields.io/badge/Kaggle_Datasets-1,582-20BEFF.svg?logo=kaggle)
+![Total Datasets](https://img.shields.io/badge/Unique_Datasets-1,779-blue.svg)
+![Kaggle Sources](https://img.shields.io/badge/Kaggle_Datasets-1,583-20BEFF.svg?logo=kaggle)
 ![Zenodo Sources](https://img.shields.io/badge/Zenodo_Records-114-003366.svg?logo=zenodo)
 ![Hugging Face](https://img.shields.io/badge/Hugging_Face-5-FFD21E.svg?logo=huggingface)
-![Mendeley Data](https://img.shields.io/badge/Mendeley_Data-7-E9711C.svg)
+![Mendeley Data](https://img.shields.io/badge/Mendeley_Data-10-E9711C.svg)
 ![GitHub Repos](https://img.shields.io/badge/GitHub_Community-36-181717.svg?logo=github)
 ![Awesome-Bangla](https://img.shields.io/badge/Awesome--Bangla-32-orange.svg)
 ![BanglaNLP](https://img.shields.io/badge/BanglaNLP_BNLP-12-purple.svg)
-![Multi-Source Linked](https://img.shields.io/badge/Multi--Source_Linked-16-success.svg)
+![Multi-Source Linked](https://img.shields.io/badge/Multi--Source_Linked-19-success.svg)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)
 
 ---
@@ -74,7 +74,7 @@ When merging records across multiple platforms, duplicate entries frequently ari
 2. **Cross-Source Entity Fusion**: When an identical dataset exists on multiple platforms (e.g. Mendeley Data, Hugging Face, GitHub, Zenodo, Kaggle, Awesome-Bangla), the records are **fused into a single canonical entry**. The entry retains direct links to all platforms (`kaggle_url`, `zenodo_url`, `github_url`, `huggingface_url`, `mendeley_url`), merges author citations, and combines download/view counts.
 3. **Author-Grounded Semantic Fingerprinting**: Normalizes titles (stripping boilerplate words such as `dataset`, `corpus`, `benchmark`, `v1.0`), and verifies author overlap before clustering.
 4. **Component Disambiguation Guardrails**: Ensures distinct multi-part datasets (`Part 1` vs `Part 2`, `4-Class` vs `5-Class`) or datasets with identical generic titles by different authors are preserved.
-5. **Audit Trail**: Every clustered and merged dataset is recorded in [`deduplication_audit_log.csv`](./deduplication_audit_log.csv) (99 duplicate clusters resolved).
+5. **Audit Trail**: Every clustered and merged dataset is recorded in [`deduplication_audit_log.csv`](./deduplication_audit_log.csv) (102 duplicate clusters resolved).
 
 ---
 
@@ -84,15 +84,15 @@ The master file [`bengali_datasets_consolidated.csv`](./bengali_datasets_consoli
 
 | Source Platform / Repository | Total Indexed | Description |
 | :--- | :-: | :--- |
-| **Kaggle Datasets** | 1,582 | Direct Kaggle community & competition datasets |
+| **Kaggle Datasets** | 1,583 | Direct Kaggle community & competition datasets |
 | **Zenodo Academic Datasets** | 114 | Academic papers, DOIs, and institutional archives |
 | **Hugging Face Hub** | 5 | Conversational, reasoning & LLM evaluation benchmarks |
-| **Mendeley Data / Elsevier** | 7 | Peer-reviewed university datasets with persistent DOIs |
+| **Mendeley Data / Elsevier** | 10 | Peer-reviewed university datasets with persistent DOIs |
 | **GitHub Community Repositories** | 36 | Curated independent research datasets on GitHub |
 | **BanglaKit / Awesome-Bangla** | 32 | Curated open-source computing & speech corpora |
 | **BanglaNLP / bnlp-resources** | 12 | Standardized benchmark tasks and parallel corpora |
-| **Multi-Source Linked Datasets** | **16** | Datasets available on 2 or more platforms simultaneously |
-| **Total Consolidated Datasets** | **1,772** | Unified, deduplicated catalog |
+| **Multi-Source Linked Datasets** | **19** | Datasets available on 2 or more platforms simultaneously |
+| **Total Consolidated Datasets** | **1,779** | Unified, deduplicated catalog |
 
 ---
 
@@ -102,15 +102,15 @@ Located in [`category-wise/task-and-modality/`](./category-wise/task-and-modalit
 
 | # | Category Name | Scope & Modality | Datasets | CSV File Link |
 | :-: | :--- | :--- | :-: | :--- |
-| 1 | **Computer Vision (Images & Objects)** | Object detection, crop/leaf disease vision, face recognition, satellite imagery | **57** | [`category-wise/task-and-modality/computer-vision-images-objects.csv`](./category-wise/task-and-modality/computer-vision-images-objects.csv) |
-| 2 | **Computer Vision (OCR & Handwriting)** | Handwritten characters, isolated numerals, license plates, document HTR/OCR | **133** | [`category-wise/task-and-modality/computer-vision-ocr-handwriting.csv`](./category-wise/task-and-modality/computer-vision-ocr-handwriting.csv) |
+| 1 | **Computer Vision (Images & Objects)** | Object detection, crop/leaf disease vision, face recognition, satellite imagery | **58** | [`category-wise/task-and-modality/computer-vision-images-objects.csv`](./category-wise/task-and-modality/computer-vision-images-objects.csv) |
+| 2 | **Computer Vision (OCR & Handwriting)** | Handwritten characters, isolated numerals, license plates, document HTR/OCR | **136** | [`category-wise/task-and-modality/computer-vision-ocr-handwriting.csv`](./category-wise/task-and-modality/computer-vision-ocr-handwriting.csv) |
 | 3 | **Multimodal & Video** | Visual question answering (VQA), image captioning, video datasets, memes, multimodal fake news | **41** | [`category-wise/task-and-modality/multimodal-video.csv`](./category-wise/task-and-modality/multimodal-video.csv) |
-| 4 | **NLP - Corpus & Linguistics** | Raw text corpora, newspaper archives, dictionaries, lexicons, POS tagging, NER, punctuation | **188** | [`category-wise/task-and-modality/nlp-corpus-linguistics.csv`](./category-wise/task-and-modality/nlp-corpus-linguistics.csv) |
-| 5 | **NLP - Text Classification & Sentiment** | Sentiment analysis, emotion detection, hate speech, offensive text, fake news, NLI, authorship | **200** | [`category-wise/task-and-modality/nlp-text-classification-sentiment.csv`](./category-wise/task-and-modality/nlp-text-classification-sentiment.csv) |
-| 6 | **NLP - Translation & Generation** | English-Bangla translation, summarization, paraphrasing, GEC, LLM reasoning, MMLU & QA | **92** | [`category-wise/task-and-modality/nlp-translation-generation.csv`](./category-wise/task-and-modality/nlp-translation-generation.csv) |
+| 4 | **NLP - Corpus & Linguistics** | Raw text corpora, newspaper archives, dictionaries, lexicons, POS tagging, NER, punctuation | **187** | [`category-wise/task-and-modality/nlp-corpus-linguistics.csv`](./category-wise/task-and-modality/nlp-corpus-linguistics.csv) |
+| 5 | **NLP - Text Classification & Sentiment** | Sentiment analysis, emotion detection, hate speech, offensive text, fake news, NLI, authorship | **203** | [`category-wise/task-and-modality/nlp-text-classification-sentiment.csv`](./category-wise/task-and-modality/nlp-text-classification-sentiment.csv) |
+| 6 | **NLP - Translation & Generation** | English-Bangla translation, summarization, paraphrasing, GEC, LLM reasoning, MMLU & QA | **105** | [`category-wise/task-and-modality/nlp-translation-generation.csv`](./category-wise/task-and-modality/nlp-translation-generation.csv) |
 | 7 | **Sign Language** | Bangla Sign Language (BdSL/BSL), gesture recognition, finger spelling, isolated signs | **53** | [`category-wise/task-and-modality/sign-language.csv`](./category-wise/task-and-modality/sign-language.csv) |
 | 8 | **Speech & Audio** | Automatic Speech Recognition (ASR), Text-to-Speech (TTS), voice recordings, dialect audio corpora | **76** | [`category-wise/task-and-modality/speech-audio.csv`](./category-wise/task-and-modality/speech-audio.csv) |
-| 9 | **Tabular & Statistical Data** | Structured tables, surveys, timeseries, census, economics, agriculture & climate stats | **932** | [`category-wise/task-and-modality/tabular-statistical-data.csv`](./category-wise/task-and-modality/tabular-statistical-data.csv) |
+| 9 | **Tabular & Statistical Data** | Structured tables, surveys, timeseries, census, economics, agriculture & climate stats | **920** | [`category-wise/task-and-modality/tabular-statistical-data.csv`](./category-wise/task-and-modality/tabular-statistical-data.csv) |
 
 ---
 
@@ -120,19 +120,19 @@ Located in [`category-wise/domain-and-application/`](./category-wise/domain-and-
 
 | # | Domain Name | Core Focus & Applications | Datasets | CSV File Link |
 | :-: | :--- | :--- | :-: | :--- |
-| 1 | **Agriculture & Farming** | Crops, rice/jute yield, leaf disease, soil classification, weather impacts, fisheries | **53** | [`category-wise/domain-and-application/agriculture-farming.csv`](./category-wise/domain-and-application/agriculture-farming.csv) |
+| 1 | **Agriculture & Farming** | Crops, rice/jute yield, leaf disease, soil classification, weather impacts, fisheries | **51** | [`category-wise/domain-and-application/agriculture-farming.csv`](./category-wise/domain-and-application/agriculture-farming.csv) |
 | 2 | **Demographics & Society** | Census statistics, population, poverty indices, gender studies, labor perceptions | **41** | [`category-wise/domain-and-application/demographics-society.csv`](./category-wise/domain-and-application/demographics-society.csv) |
-| 3 | **Economy, Finance & Real Estate** | Stock prices, commodity OHLC, real estate, inflation, banking, ecommerce (Daraz), trade | **82** | [`category-wise/domain-and-application/economy-finance-real-estate.csv`](./category-wise/domain-and-application/economy-finance-real-estate.csv) |
+| 3 | **Economy, Finance & Real Estate** | Stock prices, commodity OHLC, real estate, inflation, banking, ecommerce (Daraz), trade | **75** | [`category-wise/domain-and-application/economy-finance-real-estate.csv`](./category-wise/domain-and-application/economy-finance-real-estate.csv) |
 | 4 | **Education & Academics** | Exam questions (BEnQA), math word problems (SOMADHAN), MMLU benchmarks, admissions, textbooks | **41** | [`category-wise/domain-and-application/education-academics.csv`](./category-wise/domain-and-application/education-academics.csv) |
-| 5 | **General & Miscellaneous** | Multipurpose datasets, cross-cutting statistical collections, unspecialized tables | **517** | [`category-wise/domain-and-application/general-miscellaneous.csv`](./category-wise/domain-and-application/general-miscellaneous.csv) |
-| 6 | **Governance, Law, Politics & Transport** | Traffic, road safety, crime records, legal statutes, election data, public transit | **102** | [`category-wise/domain-and-application/governance-law-politics-transport.csv`](./category-wise/domain-and-application/governance-law-politics-transport.csv) |
-| 7 | **Healthcare & Medicine** | COVID-19, clinical notes, disease classification, hospital records, mental health, medical imaging | **103** | [`category-wise/domain-and-application/healthcare-medicine.csv`](./category-wise/domain-and-application/healthcare-medicine.csv) |
+| 5 | **General & Miscellaneous** | Multipurpose datasets, cross-cutting statistical collections, unspecialized tables | **512** | [`category-wise/domain-and-application/general-miscellaneous.csv`](./category-wise/domain-and-application/general-miscellaneous.csv) |
+| 6 | **Governance, Law, Politics & Transport** | Traffic, road safety, crime records, legal statutes, election data, public transit | **116** | [`category-wise/domain-and-application/governance-law-politics-transport.csv`](./category-wise/domain-and-application/governance-law-politics-transport.csv) |
+| 7 | **Healthcare & Medicine** | COVID-19, clinical notes, disease classification, hospital records, mental health, medical imaging | **117** | [`category-wise/domain-and-application/healthcare-medicine.csv`](./category-wise/domain-and-application/healthcare-medicine.csv) |
 | 8 | **Industry, Energy & Manufacturing** | RMG garment sector, textiles, electricity generation, power grids, solar data | **10** | [`category-wise/domain-and-application/industry-energy-manufacturing.csv`](./category-wise/domain-and-application/industry-energy-manufacturing.csv) |
-| 9 | **Linguistics & Language Research** | Grammar, corpora, phonetics, dialects, morphology, lexicons, translation, NLP evaluation | **516** | [`category-wise/domain-and-application/linguistics-language-research.csv`](./category-wise/domain-and-application/linguistics-language-research.csv) |
-| 10 | **News & Media** | Newspaper archives (Prothom Alo, Daily Star), headlines, journalism, fake news, fact-checking | **80** | [`category-wise/domain-and-application/news-media.csv`](./category-wise/domain-and-application/news-media.csv) |
-| 11 | **Social Media, Arts & Culture** | Social media sentiment, literature, poetry, movies, religion, cultural alignment (BanglaSocialBench) | **110** | [`category-wise/domain-and-application/social-media-arts-culture.csv`](./category-wise/domain-and-application/social-media-arts-culture.csv) |
-| 12 | **Sports & Recreation** | Cricket match records (IPL, BPL), football stats, tournament histories, player metrics | **8** | [`category-wise/domain-and-application/sports-recreation.csv`](./category-wise/domain-and-application/sports-recreation.csv) |
-| 13 | **Technology & Telecommunications** | Telecom networks, mobile devices, IT usage, software engineering, cyber security | **47** | [`category-wise/domain-and-application/technology-telecommunications.csv`](./category-wise/domain-and-application/technology-telecommunications.csv) |
+| 9 | **Linguistics & Language Research** | Grammar, corpora, phonetics, dialects, morphology, lexicons, translation, NLP evaluation | **515** | [`category-wise/domain-and-application/linguistics-language-research.csv`](./category-wise/domain-and-application/linguistics-language-research.csv) |
+| 10 | **News & Media** | Newspaper archives (Prothom Alo, Daily Star), headlines, journalism, fake news, fact-checking | **78** | [`category-wise/domain-and-application/news-media.csv`](./category-wise/domain-and-application/news-media.csv) |
+| 11 | **Social Media, Arts & Culture** | Social media sentiment, literature, poetry, movies, religion, cultural alignment (BanglaSocialBench) | **102** | [`category-wise/domain-and-application/social-media-arts-culture.csv`](./category-wise/domain-and-application/social-media-arts-culture.csv) |
+| 12 | **Sports & Recreation** | Cricket match records (IPL, BPL), football stats, tournament histories, player metrics | **7** | [`category-wise/domain-and-application/sports-recreation.csv`](./category-wise/domain-and-application/sports-recreation.csv) |
+| 13 | **Technology & Telecommunications** | Telecom networks, mobile devices, IT usage, software engineering, cyber security | **52** | [`category-wise/domain-and-application/technology-telecommunications.csv`](./category-wise/domain-and-application/technology-telecommunications.csv) |
 | 14 | **Weather, Climate & Environment** | Rainfall, temperature, cyclones, air quality (AQI), flood forecasts, environmental sensors | **62** | [`category-wise/domain-and-application/weather-climate-environment.csv`](./category-wise/domain-and-application/weather-climate-environment.csv) |
 
 ---

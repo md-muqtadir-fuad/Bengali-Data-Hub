@@ -46,7 +46,7 @@ def classify_dataset(title, desc='', url=''):
         'incongruity', 'manipulate', 'authentic and manipulated', 'bengali-fake',
         'political stance', 'threat', 'profan', 'scam', 'photocard', 'authorship attribution',
         'news categorization', 'news topic', 'xnli', 'natural language inference',
-        'sociopragmatic', 'kinship'
+        'sociopragmatic', 'kinship', 'clinical severity', 'severity class', 'severity classes'
     ]):
         tm = 'NLP - Text Classification & Sentiment'
     elif any(k in text for k in [
@@ -55,8 +55,8 @@ def classify_dataset(title, desc='', url=''):
         'indicgec', 'math olympiad', 'seq2seq', 'cross-lingual', 'bilingual', 'qa dataset',
         'qa benchmark', 'llm', 'gpt', 'nemotron', 'chat', 'mt', 'prompt', 'supara',
         'reasoning', 'mmlu', 'math word problem', 'mwp', 'distil', 'instruction',
-        'benqa', 'somadhan', 'b-reaso', 'bnmmlu'
-    ]):
+        'benqa', 'somadhan', 'b-reaso', 'bnmmlu', 'question-answer', 'question answer'
+    ]) or bool(re.search(r'\bqa\b', text)):
         tm = 'NLP - Translation & Generation'
     elif any(k in text for k in [
         'corpus', 'article', 'wikipedia', 'wiki', 'lexicon', 'dictionary', 'nlp', 'pos', 'ner',
@@ -87,21 +87,29 @@ def classify_dataset(title, desc='', url=''):
         dom = 'Education & Academics'
     elif any(k in text for k in ['sex work', 'demographic', 'census', 'population', 'household', 'poverty', 'gender', 'worker', 'survey', 'aging', 'slum', 'birth rate', 'unemployment', 'female vs male']):
         dom = 'Demographics & Society'
-    elif any(k in text for k in ['ohlc', 'commodity', 'daraz', 'stock', 'price', 'market', 'bank', 'economy', 'economic', 'financial', 'gdp', 'inflation', 'commerce', 'trade', 'ecommerce', 'sales', 'real estate', 'loan', 'remittance', 'forex', 'bikroy']):
-        dom = 'Economy, Finance & Real Estate'
-    elif any(k in text for k in ['banglasocialbench', 'social media', 'facebook', 'youtube', 'twitter', 'comment', 'review', 'restaurant', 'food', 'recipe', 'meme', 'song', 'music', 'lyrics', 'poetry', 'culture', 'poem', 'movie', 'religion', 'heritage', 'folk', 'dish', 'travel', 'tourism', 'literature', 'authorship', 'banglaauth']):
-        dom = 'Social Media, Arts & Culture'
-    elif any(k in text for k in ['dailydialogue', 'xnli', 'banglawriting', 'bangladial', 'nlp', 'linguistic', 'grammar', 'lexicon', 'dictionary', 'corpus', 'pos', 'ner', 'stemmer', 'word', 'phoneme', 'bilingual', 'dialect', 'idiom', 'deepseek', 'distil', 'matrivasha', 'shobdo', 'sadhuriti', 'bhasha', 'sign language', 'bdsl', 'bsl', 'speech', 'audio', 'banglalekha', 'bornomala', 'lipi', 'ekush', 'ishara']):
-        dom = 'Linguistics & Language Research'
     elif any(k in text for k in [
         'covid', 'health', 'hospital', 'disease', 'dengue', 'medical', 'cancer', 'pneumonia',
         'mental health', 'addiction', 'medicine', 'doctor', 'patient', 'clinical', 'aphasia',
         'virus', 'nipah', 'cardiovascular', 'cvd', 'depression', 'drug', 'pharmacy', 'herbs',
         'suicide', 'diet', 'nutrition', 'malaria', 'chikungunya', 'diabetes', 'symptom',
         'healthcare', 'mortality', 'icu', 'clinic', 'blood', 'autism', 'blind', 'disability',
-        'skin disease', 'x-ray', 'ct-scan', 'medibeng'
+        'skin disease', 'x-ray', 'ct-scan', 'medibeng', 'triage'
     ]):
         dom = 'Healthcare & Medicine'
+    elif any(k in text for k in [
+        'traffic', 'license plate', 'vehicle', 'accident', 'constitution', 'crime',
+        'road', 'police', 'government', 'governance', 'election', 'voter', 'parliament',
+        'egov', 'political', 'politics', 'policy', 'acled', 'conflict',
+        'fraud', 'biman', 'airline', 'transport', 'railway', 'train', 'metro', 'highway',
+        'corruption', 'court', 'violence', 'labor act'
+    ]) or any(re.search(r'\b' + k + r'\b', text) for k in ['law', 'legal', 'act']):
+        dom = 'Governance, Law, Politics & Transport'
+    elif any(k in text for k in ['ohlc', 'commodity', 'daraz', 'stock', 'price', 'market', 'bank', 'economy', 'economic', 'financial', 'gdp', 'inflation', 'commerce', 'trade', 'ecommerce', 'sales', 'real estate', 'loan', 'remittance', 'forex', 'bikroy']):
+        dom = 'Economy, Finance & Real Estate'
+    elif any(k in text for k in ['banglasocialbench', 'social media', 'facebook', 'youtube', 'twitter', 'comment', 'review', 'restaurant', 'food', 'recipe', 'meme', 'song', 'music', 'lyrics', 'poetry', 'culture', 'poem', 'movie', 'religion', 'heritage', 'folk', 'dish', 'travel', 'tourism', 'literature', 'authorship', 'banglaauth']):
+        dom = 'Social Media, Arts & Culture'
+    elif any(k in text for k in ['dailydialogue', 'xnli', 'banglawriting', 'bangladial', 'nlp', 'linguistic', 'grammar', 'lexicon', 'dictionary', 'corpus', 'pos', 'ner', 'stemmer', 'word', 'phoneme', 'bilingual', 'dialect', 'idiom', 'deepseek', 'distil', 'matrivasha', 'shobdo', 'sadhuriti', 'bhasha', 'sign language', 'bdsl', 'bsl', 'speech', 'audio', 'banglalekha', 'bornomala', 'lipi', 'ekush', 'ishara']):
+        dom = 'Linguistics & Language Research'
     elif any(re.search(r'\b' + k + r'\b', text) for k in [
         'weather', 'climate', 'temperature', 'rainfall', 'flood', 'rain', 'pollution', 'aqi',
         'air quality', 'environment', 'cyclone', 'dhoroni', 'river', 'estuary', 'water', 'tide',
@@ -128,14 +136,6 @@ def classify_dataset(title, desc='', url=''):
         'livestock', 'pest'
     ]):
         dom = 'Agriculture & Farming'
-    elif any(k in text for k in [
-        'traffic', 'license plate', 'vehicle', 'accident', 'law', 'constitution', 'crime',
-        'road', 'police', 'government', 'governance', 'election', 'voter', 'parliament',
-        'legal', 'act', 'egov', 'political', 'politics', 'policy', 'acled', 'conflict',
-        'fraud', 'biman', 'airline', 'transport', 'railway', 'train', 'metro', 'highway',
-        'corruption', 'court', 'violence'
-    ]):
-        dom = 'Governance, Law, Politics & Transport'
     elif any(k in text for k in [
         'telecom', 'mobile', 'smartphone', 'laptop', 'isp', 'internet', 'grameenphone',
         'banglalink', 'robi', 'airtel', 'teletalk', 'broadband', 'tech', 'device',
@@ -672,7 +672,7 @@ def main():
                     'ekush', 'banglawriting', 'banglalekha', 'ishara', 'supara', 'indicnlp',
                     'oscar', 'zilla', 'vashantor', 'multibanfakedetect', 'wbsubndb', 'drishti',
                     'potrika', 'samanantar', 'banglabook', 'bengalidictionary', 'somadhan',
-                    'benqa', 'bnmmlu'
+                    'benqa', 'bnmmlu', 'severity', 'healthcare', 'bnlit'
                 ] for w in distinct_s1):
                     union(i, j)
             # Rule E: Specific compound benchmark token matching (e.g. banglalekhaimagecaptions)

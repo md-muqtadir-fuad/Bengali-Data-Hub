@@ -330,6 +330,226 @@ def get_new_15_datasets():
         'mendeley_url': 'https://data.mendeley.com/datasets/5mkdyy5xwb/1'
     })
 
+    # 17. Roboflow: european-university-of-bangladesh/bangladeshi-vehicles-license-plate/dataset/2
+    records.append({
+        'title': 'Bangladeshi Vehicles License Plate Dataset (EUB)',
+        'source': 'Roboflow Universe',
+        'url': 'https://universe.roboflow.com/european-university-of-bangladesh/bangladeshi-vehicles-license-plate/dataset/2',
+        'author': 'European University of Bangladesh (EUB)',
+        'last_updated': '2023',
+        'downloads': '320',
+        'upvotes_or_views': '1200',
+        'rating': '',
+        'file_size': '250 MB',
+        'file_formats': 'YOLOv8 / COCO (Annotated License Plate Images)',
+        'description': 'Annotated vehicle license plate detection dataset and YOLO/COCO models developed at European University of Bangladesh (EUB) for automatic license plate recognition (ALPR) and intelligent traffic monitoring.',
+        'kaggle_url': '',
+        'zenodo_url': '',
+        'github_url': '',
+        'huggingface_url': '',
+        'mendeley_url': ''
+    })
+
+    # 18. Roboflow: t2510677/scene-awareness-model-bmiuw/dataset/1
+    records.append({
+        'title': 'Bangladeshi Road Scene Awareness & Signboard Dataset',
+        'source': 'Roboflow Universe',
+        'url': 'https://universe.roboflow.com/t2510677/scene-awareness-model-bmiuw/dataset/1',
+        'author': 'T2510677',
+        'last_updated': '2024',
+        'downloads': '180',
+        'upvotes_or_views': '850',
+        'rating': '',
+        'file_size': '340 MB',
+        'file_formats': 'YOLOv8 / COCO (1,200+ Annotated Street Images)',
+        'description': 'Computer vision object detection dataset comprising 1,200+ road and street images annotated with road signboards, traffic signs, and vehicle license plates for autonomous scene awareness and driving assistance in Bangladesh.',
+        'kaggle_url': '',
+        'zenodo_url': '',
+        'github_url': '',
+        'huggingface_url': '',
+        'mendeley_url': ''
+    })
+
+    # 19. Roboflow: project400/400project
+    records.append({
+        'title': 'Bangladeshi Number Plate Detection Dataset (400project)',
+        'source': 'Roboflow Universe',
+        'url': 'https://universe.roboflow.com/project400/400project',
+        'author': 'Project400 Team',
+        'last_updated': '2023',
+        'downloads': '240',
+        'upvotes_or_views': '920',
+        'rating': '',
+        'file_size': '180 MB',
+        'file_formats': 'YOLO / COCO (~900 Annotated Vehicle Images)',
+        'description': 'Object detection dataset containing ~900 annotated vehicle images for Bangladeshi vehicle license plate and registration number detection in varied illumination and camera angles.',
+        'kaggle_url': '',
+        'zenodo_url': '',
+        'github_url': '',
+        'huggingface_url': '',
+        'mendeley_url': ''
+    })
+
+    # 20. Roboflow: 1996images/test_1996_images-fzxf9
+    records.append({
+        'title': 'Bangladeshi Traffic & Vehicle Object Detection Dataset (1996images)',
+        'source': 'Roboflow Universe',
+        'url': 'https://universe.roboflow.com/1996images/test_1996_images-fzxf9',
+        'author': '1996images',
+        'last_updated': '2024',
+        'downloads': '560',
+        'upvotes_or_views': '2400',
+        'rating': '',
+        'file_size': '1.2 GB',
+        'file_formats': 'YOLOv8 / COCO (4,580 Street & Vehicle Images)',
+        'description': 'Large-scale computer vision dataset comprising 4,580 annotated street and traffic images for multi-class vehicle detection, road monitoring, and transport automation in Bangladesh.',
+        'kaggle_url': '',
+        'zenodo_url': '',
+        'github_url': '',
+        'huggingface_url': '',
+        'mendeley_url': ''
+    })
+
+    # 21. Figshare: Bangla (Bengali) Drama Review Dataset (13162085/1)
+    records.append({
+        'title': 'Bangla (Bengali) Drama Review Dataset',
+        'source': 'Figshare',
+        'url': 'https://figshare.com/articles/dataset/Bangla_Bengali_Drama_Review_Dataset/13162085/1',
+        'author': 'Salim Sazzed',
+        'last_updated': 'Published: 2020 (DOI: 10.6084/m9.figshare.13162085.v1)',
+        'downloads': '1200',
+        'upvotes_or_views': '3500',
+        'rating': '',
+        'file_size': '2.5 MB',
+        'file_formats': 'CSV (11,807 Labeled Drama Reviews)',
+        'description': 'Manually annotated sentiment dataset containing 11,807 user reviews (3,307 negative and 8,500 positive) collected from YouTube Bengali dramas for cross-lingual sentiment classification and opinion mining.',
+        'kaggle_url': '',
+        'zenodo_url': '',
+        'github_url': '',
+        'huggingface_url': '',
+        'mendeley_url': ''
+    })
+
+    # 22. IEEE DataPort: SUPara-Benchmark
+    records.append({
+        'title': 'SUPara-Benchmark: English-Bangla Machine Translation Dataset',
+        'source': 'IEEE DataPort',
+        'url': 'https://ieee-dataport.org/open-access/supara-benchmark-benchmark-dataset-english-bangla-machine-translation',
+        'author': 'Md Abdullah Al Mumin, M. H. Seddiqui, M Zafar Iqbal, M. J. Islam',
+        'last_updated': 'Published: 2021 (DOI: 10.21227/czes-gs42)',
+        'downloads': '650',
+        'upvotes_or_views': '1800',
+        'rating': '',
+        'file_size': '45 MB',
+        'file_formats': 'Parallel Text (English-Bangla Sentence Pairs)',
+        'description': 'IEEE DataPort benchmark dataset for validating and evaluating English-Bangla machine translation systems across multiple domains, curated by SUST and international researchers.',
+        'kaggle_url': '',
+        'zenodo_url': '',
+        'github_url': '',
+        'huggingface_url': '',
+        'mendeley_url': ''
+    })
+
+    # 23. Web: Ekush: Bangla Handwritten Characters Dataset
+    records.append({
+        'title': 'Ekush: Bangla Handwritten Characters Dataset',
+        'source': 'Web (Rabby.dev)',
+        'url': 'https://rabby.dev/ekush/',
+        'author': 'A.K.M. Shahariar Azad Rabby, Abdullah Saihan Taki, DIU NLP Lab',
+        'last_updated': '2019 (Published research)',
+        'downloads': '2400',
+        'upvotes_or_views': '8900',
+        'rating': '',
+        'file_size': '1.4 GB',
+        'file_formats': 'Images + CSV (367,018 Samples across 122 Classes)',
+        'description': 'Ekush is a comprehensive offline handwritten Bengali character dataset containing 367,018 handwritten character samples across 122 classes (basic characters, numerals, modifiers, and compound characters) collected from 3,086 individuals across Bangladesh.',
+        'kaggle_url': '',
+        'zenodo_url': '',
+        'github_url': '',
+        'huggingface_url': '',
+        'mendeley_url': ''
+    })
+
+    # 24. Mendeley Data: Bangladesh Labor Act, 2006 (3n9vv2x4xt/3)
+    records.append({
+        'title': 'Bangladesh Labor Act, 2006 Bangla Dataset For NLP',
+        'source': 'Mendeley Data',
+        'url': 'https://data.mendeley.com/datasets/3n9vv2x4xt/3',
+        'author': 'Kazi Md Naimur Rahman, Md Azaz Ahamed, Aminul Haque',
+        'last_updated': 'Published: 2024 (DOI: 10.17632/3n9vv2x4xt.3)',
+        'downloads': '140',
+        'upvotes_or_views': '320',
+        'rating': '',
+        'file_size': '4 MB',
+        'file_formats': 'JSON / CSV (Bilingual Question-Answer Pairs)',
+        'description': 'Question-and-answer pairs based on the Bangladesh Labor Act 2006 for legal natural language processing, legal automation, AI-powered legal assistance, and compliance policy analysis, provided in both Bengali and English.',
+        'kaggle_url': '',
+        'zenodo_url': '',
+        'github_url': '',
+        'huggingface_url': '',
+        'mendeley_url': 'https://data.mendeley.com/datasets/3n9vv2x4xt/3'
+    })
+
+    # 25. Kaggle: BNLIT: Bangla Natural Language Image to Text Dataset
+    records.append({
+        'title': 'BNLIT: Bangla Natural Language Image to Text Dataset',
+        'source': 'Kaggle',
+        'url': 'https://www.kaggle.com/datasets/jishan900/bangla-natural-language-image-to-text-bnlit',
+        'author': 'Md. Asifuzzaman Jishan (jishan900)',
+        'last_updated': '2023',
+        'downloads': '380',
+        'upvotes_or_views': '42',
+        'rating': '10.0',
+        'file_size': '1.8 GB',
+        'file_formats': '8,743 Images + Captions CSV + Features',
+        'description': 'Bangla natural language image-to-text visual descriptor dataset containing 8,743 Bangladesh-centric images with paired descriptive Bangla text captions for image captioning and vision-language deep learning models.',
+        'kaggle_url': 'https://www.kaggle.com/datasets/jishan900/bangla-natural-language-image-to-text-bnlit',
+        'zenodo_url': '',
+        'github_url': '',
+        'huggingface_url': '',
+        'mendeley_url': ''
+    })
+
+    # 26. Mendeley Data: Bangla Healthcare Severity Dataset (37z8kgx79m/1)
+    records.append({
+        'title': 'Bangla Healthcare Severity Dataset',
+        'source': 'Mendeley Data',
+        'url': 'https://data.mendeley.com/datasets/37z8kgx79m/1',
+        'author': 'Pulock Deb Roy, Mst. Chameli Begum, Dolour Husain Sagor, Badar Hossain',
+        'last_updated': 'Published: 2026 (DOI: 10.17632/37z8kgx79m.1)',
+        'downloads': '95',
+        'upvotes_or_views': '260',
+        'rating': '',
+        'file_size': '6 MB',
+        'file_formats': 'CSV (5,263 Multi-Class Healthcare Severity Samples)',
+        'description': '5,263 manually annotated real-world Bangla healthcare queries from Facebook and YouTube categorized into 4 clinical severity classes (Emergency, Urgent, Routine, General Query) for healthcare chatbots, triage, and clinical decision support.',
+        'kaggle_url': '',
+        'zenodo_url': '',
+        'github_url': '',
+        'huggingface_url': '',
+        'mendeley_url': 'https://data.mendeley.com/datasets/37z8kgx79m/1'
+    })
+
+    # 27. Mendeley Data: Bangla Dialect Dataset (sm63ryv5dt/1)
+    records.append({
+        'title': 'Bangla Dialect Dataset: Exploring Linguistic Diversity Across Regions',
+        'source': 'Mendeley Data',
+        'url': 'https://data.mendeley.com/datasets/sm63ryv5dt/1',
+        'author': 'Md. Julkar Naeen, Sourav Kumar Das, Supta Das Dip Supta, Tabib E Alahi, Md Faisal Tajwar Faisal, Abdullah Al Rahat, Samurtha Jahan Ayshe, Ummay Mahjabeen, Md Tanvir Tahmid, Mayen Uddin Mojumdar',
+        'last_updated': 'Published: 2024 (DOI: 10.17632/sm63ryv5dt.1)',
+        'downloads': '160',
+        'upvotes_or_views': '410',
+        'rating': '',
+        'file_size': '8 MB',
+        'file_formats': 'CSV (7-District Regional Dialects Parallel to Standard Bangla)',
+        'description': 'Multi-regional parallel Bangla text dataset containing sentences from diverse regions across Bangladesh organized across 7 regional columns aligned with standard Bengali.',
+        'kaggle_url': '',
+        'zenodo_url': '',
+        'github_url': '',
+        'huggingface_url': '',
+        'mendeley_url': 'https://data.mendeley.com/datasets/sm63ryv5dt/1'
+    })
+
     return records
 
 if __name__ == '__main__':
