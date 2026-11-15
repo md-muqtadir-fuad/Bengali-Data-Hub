@@ -11,6 +11,9 @@
 ![GitHub Repos](https://img.shields.io/badge/GitHub_Community-36-181717.svg?logo=github)
 ![Awesome-Bangla](https://img.shields.io/badge/Awesome--Bangla-32-orange.svg)
 ![BanglaNLP](https://img.shields.io/badge/BanglaNLP_BNLP-12-purple.svg)
+![Roboflow](https://img.shields.io/badge/Roboflow-4-purple.svg)
+![Figshare](https://img.shields.io/badge/Figshare-1-red.svg)
+![IEEE DataPort](https://img.shields.io/badge/IEEE_DataPort-1-00629B.svg)
 ![Multi-Source Linked](https://img.shields.io/badge/Multi--Source_Linked-19-success.svg)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)
 
@@ -41,6 +44,9 @@ This repository brings together and harmonizes datasets from:
 - **[BanglaKit / Awesome-Bangla](https://github.com/banglakit/awesome-bangla)** (Foundational computing tools, speech corpora & OCR resources)
 - **[BanglaNLP / bnlp-resources](https://github.com/banglanlp/bnlp-resources)** (Benchmark tasks for POS, NER, MT, Sentiment, Authorship, News)
 - **[GitHub Community](https://github.com)** (Leading independent research laboratories, university teams, and NLP authors)
+- **[Roboflow Universe](https://universe.roboflow.com)** (Annotated computer vision datasets for vehicles, number plates, and traffic scenes)
+- **[Figshare](https://figshare.com)** (Academic drama review sentiment datasets)
+- **[IEEE DataPort](https://ieee-dataport.org)** (Open benchmark datasets for English-Bangla machine translation)
 
 ---
 

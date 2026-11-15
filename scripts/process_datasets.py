@@ -201,6 +201,12 @@ def generate_markdown_catalog(data_list, task_map, dom_map, total_unique, source
     lines.append(f"![GitHub Repos](https://img.shields.io/badge/GitHub_Community-{source_counts.get('GitHub', 0):,}-181717.svg?logo=github)")
     lines.append(f"![Awesome-Bangla](https://img.shields.io/badge/Awesome--Bangla-{source_counts.get('Awesome-Bangla', 0):,}-orange.svg)")
     lines.append(f"![BanglaNLP](https://img.shields.io/badge/BanglaNLP_BNLP-{source_counts.get('BNLP-Resources', 0):,}-purple.svg)")
+    if source_counts.get('Roboflow Universe', 0):
+        lines.append(f"![Roboflow](https://img.shields.io/badge/Roboflow-{source_counts.get('Roboflow Universe', 0):,}-purple.svg)")
+    if source_counts.get('Figshare', 0):
+        lines.append(f"![Figshare](https://img.shields.io/badge/Figshare-{source_counts.get('Figshare', 0):,}-red.svg)")
+    if source_counts.get('IEEE DataPort', 0):
+        lines.append(f"![IEEE DataPort](https://img.shields.io/badge/IEEE_DataPort-{source_counts.get('IEEE DataPort', 0):,}-00629B.svg)")
     lines.append(f"![Multi-Source Linked](https://img.shields.io/badge/Multi--Source_Linked-{multi_source_count}-success.svg)")
     lines.append("![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)")
     lines.append("")
@@ -231,6 +237,9 @@ def generate_markdown_catalog(data_list, task_map, dom_map, total_unique, source
     lines.append("- **[BanglaKit / Awesome-Bangla](https://github.com/banglakit/awesome-bangla)** (Foundational computing tools, speech corpora & OCR resources)")
     lines.append("- **[BanglaNLP / bnlp-resources](https://github.com/banglanlp/bnlp-resources)** (Benchmark tasks for POS, NER, MT, Sentiment, Authorship, News)")
     lines.append("- **[GitHub Community](https://github.com)** (Leading independent research laboratories, university teams, and NLP authors)")
+    lines.append("- **[Roboflow Universe](https://universe.roboflow.com)** (Annotated computer vision datasets for vehicles, number plates, and traffic scenes)")
+    lines.append("- **[Figshare](https://figshare.com)** (Academic drama review sentiment datasets)")
+    lines.append("- **[IEEE DataPort](https://ieee-dataport.org)** (Open benchmark datasets for English-Bangla machine translation)")
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -876,10 +885,6 @@ def main():
     with open('README.md', 'w', encoding='utf-8') as f:
         f.write(catalog_md)
     print("Wrote README.md catalog!")
-
-    with open('README', 'w', encoding='utf-8') as f:
-        f.write(catalog_md)
-    print("Updated README file!")
 
 if __name__ == '__main__':
     main()
